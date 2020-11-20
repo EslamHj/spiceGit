@@ -1,0 +1,59 @@
+﻿body {
+}
+
+.borderList {
+    background-color: #dec6e1;
+    border-radius: 10px;
+    padding: 30px;
+}
+.list {
+ 
+    color: #97468d !important;
+}
+.btnNew {
+    background-color: #dec6e1;
+    border-color: #97468d;
+    border-width: medium;
+    color: #97468d !important;
+    font-weight: bold;
+}
+
+.Create Category, h2 {
+    font-size: 2rem;
+    color: #97468d;
+}
+.borderCR {
+    display: block;
+    background-color: #dec6e1;
+    border-radius: 10px;
+    padding: 30px;
+}
+.nameLabel {
+    font-size: 25px;
+    color: #97468d;
+    font-weight: bold;
+}
+.txtName{
+
+}
+.btncreate {
+    width: 250px;
+    margin-left: 250PX;
+    background-color: #dec6e1;
+    border-color: #97468d;
+    color: #97468d !important;
+    font-weight: bold;
+    border-width: medium;
+ 
+}
+.btnback {
+    width: 250px;
+    margin-left: 120px;
+    background-color: #dec6e1;
+    border-color: #97468d;
+    color: #97468d !important;
+    font-weight: bold;
+    border-width: medium;
+    margin: 0px 150px 0px;
+   
+}

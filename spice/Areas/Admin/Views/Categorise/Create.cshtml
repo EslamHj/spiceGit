@@ -1,0 +1,32 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<form  asp-action="Create" method="post">
+    <div class="borderCR">
+        <h2 class="Create Category"> Create Category </h2>
+        <br />
+        <div class="form-group row">
+            @*<div asp-validation-summary="ModelOnly" class="text-danger"> </div>*@
+            <div class="col-4 text-right">
+                <label asp-for="name" class="nameLabel col-form-label ">Name </label>
+            </div>
+            <div class="col-4 text-left">
+                <input asp-for="name" class="txtName form-control " />
+            </div>
+        </div>
+        <div>
+            <div class="form-group row">
+                <div class="col-4 ">
+                    <input class="btncreate btn  form-control" value="Create" />
+                </div>
+                <div class="col-6">
+                    <a class=" btnback btn  form-control">back to list </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

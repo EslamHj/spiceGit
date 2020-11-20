@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Category>
+@{
+    ViewData["Title"] = "CategoryView";
+}
+
+<div class="borderList" >
+    <div class="row">
+        <div class=" col-6" >
+            <h2 class="list text-danger">
+                catecories list
+            </h2>
+
+        </div>
+        <div class=" col-6 text-right" >
+            <partial name="creatbtn"/>
+        </div>
+        <div>
+            @if (Model.Count() == 0)
+            {
+               <p class="text-danger">No catecory.... </p> 
+
+            }
+            else
+            {
+                <table class="table table-striped border" >
+                    <tr class="table-secondary">
+                        <th>
+                            @Html.DisplayNameFor(m => m.name)
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    @foreach(var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(m=>item.name)
+                            </td>
+                            <td>
+                              Dateils | Edit | Delete
+                            </td>
+                        </tr>
+                    }
+                </table>
+            }
+        </div>
+    </div>
+
+</div>
